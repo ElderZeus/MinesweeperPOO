@@ -82,7 +82,7 @@ function game0ver() {
   playing = false;
 }
 
-reset = () => {
+function reset() {
   cols = floor(width / w);
   rows = floor(height / w);
   totalBombs = 20;
@@ -94,7 +94,7 @@ reset = () => {
     }
   }
   placeBombs();
-};
+}
 
 function placeBombs() {
   //pick spots for bombs
